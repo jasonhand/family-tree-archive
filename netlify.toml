@@ -1,0 +1,24 @@
+[build]
+  # Directory that contains the deploy-ready HTML files and assets
+  publish = "dist"
+
+  # Command to build the production version of the site
+  command = "npm run build"
+
+# Headers for better performance and security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Cache static assets for 1 year
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    # Don't cache HTML files
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache"
