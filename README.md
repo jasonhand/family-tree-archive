@@ -120,12 +120,3 @@ This is a personal family history project. If you'd like to use it for your own 
 3. Customize the branding (title, colors, etc.)
 4. Deploy to your preferred hosting service
 
-## License
-
-[Specify your license here]
-
-## Acknowledgments
-
-- Built with [Svelte](https://svelte.dev/)
-- Maps powered by [Leaflet](https://leafletjs.com/)
-- Fonts: Cormorant Garamond & Outfit from Google Fonts
